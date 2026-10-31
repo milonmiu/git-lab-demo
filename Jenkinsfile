@@ -5,7 +5,7 @@ pipeline {
     }
     parameters {
         choice(name: 'ENV', choices: ['dev', 'stage', 'prod'], description: 'Select Environment')
-        string(name: 'TAG', defaultValue: 'v1.0', description: 'Enter Version Tag')
+        string(name: 'TAG', defaultValue: 'v2.0', description: 'Enter Version Tag')
     }
     stages {
         stage('Build') {
